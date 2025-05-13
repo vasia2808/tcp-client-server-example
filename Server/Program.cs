@@ -20,7 +20,7 @@ namespace Server
                 var encoding = Encoding.UTF8;
                 var str = encoding.GetString(data);
 
-                WriteLine(str);
+                WriteLine($"Received message: {str}");
 
                 return buffer;
             });

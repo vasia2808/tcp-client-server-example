@@ -15,7 +15,7 @@ namespace Server
 
             while (true)
             {
-                WriteLine("Message:");
+                Write("Message: ");
 
                 var message = ReadLine();
                 var answer = default(string);
@@ -31,7 +31,7 @@ namespace Server
                     }
                 }
 
-                WriteLine(answer);
+                WriteLine($"Answer: {answer}");
                 WriteLine();
             }
         }
